@@ -1,4 +1,6 @@
 import random
+import time
+start = time.time()
 import math
 # Pacote que suporta geração de processos usando uma API semelhante ao módulo de threading
 import multiprocessing
@@ -50,3 +52,5 @@ if __name__=='__main__':
 
     pi = sum(pontosCirc) / n * 4
     print("Valor aproximado de PI: ", pi) 
+    end = time.time()
+    print(end - start) 
